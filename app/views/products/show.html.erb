@@ -1,0 +1,36 @@
+<h1 class="title--center">Product Details</h1>
+
+<div class="details--center"> 
+  <div>
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @product.name %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @product.description %>
+    </p>
+
+    <p>
+      <strong>Stock:</strong>
+      <%= @product.stock %>
+    </p>
+
+    <p>
+      <strong>Price:</strong>
+      <%= @product.price %>
+    </p>
+
+  </div>
+
+</div>
+  
+<div class="links--center">
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>
+
+
