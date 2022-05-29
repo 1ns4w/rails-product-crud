@@ -28,6 +28,11 @@ default: &default
   password: root
 ```
 
+Create database and migrate models to it.
+```bash
+rails db:create && rails db:migrate
+```
+
 Launch and expose the application on an available port.
 ```bash
 foreman start -f Procfile.dev -p 3000
