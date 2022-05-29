@@ -1,5 +1,5 @@
 # Rails CRUD Example
-This is a dummy web application for managing products using Ruby 2.7.3, Ruby on Rails 6.1.6, and PostgreSQL 14.
+Dummy web application for managing products using Ruby 2.7.3, Ruby on Rails 6.1.6, and PostgreSQL 14.
 
 ## Installation
 Clone the repository and move to the downloaded directory.
