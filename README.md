@@ -15,6 +15,19 @@ bundle install
 ```
 
 ## Usage
+
+Update database.yml with your PostgreSQL credentials.
+```yml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: root
+```
+
 Launch and expose the application on an available port.
 ```bash
 foreman start -f Procfile.dev -p 3000
@@ -33,7 +46,7 @@ http://127.0.0.1:3000/products
 ![image](https://user-images.githubusercontent.com/66014666/170885072-261ba39c-ed41-4041-8f4d-ec80fbd8e472.png)
 ### Showing a product information
 ![image](https://user-images.githubusercontent.com/66014666/170885098-3c465998-57e8-4916-91b0-e33690e969ce.png)
-### Editing a product information
+### Update a product information
 ![image](https://user-images.githubusercontent.com/66014666/170885132-b9f8b3db-a572-46c8-8fd1-b1b1b5645d5c.png)
 ![image](https://user-images.githubusercontent.com/66014666/170885150-86247880-94e4-4217-a6b8-bc52aa3ad713.png)
 ### Deleting a product
