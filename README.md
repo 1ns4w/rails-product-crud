@@ -1,24 +1,39 @@
-# README
+# Rails CRUD Example
+This is a dummy web application for managing products using Ruby on Rails and PostgreSQL.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+Clone the repository and move to the downloaded directory.
+```bash
+git clone https://github.com/ins4w/rails-product-crud
+```
+```bash
+cd rails-product-crud
+```
+Install the project dependencies.
+```bash
+bundle install
+```
 
-Things you may want to cover:
+## Usage
+Launch and expose the application on an available port.
+```bash
+foreman start -f Procfile.dev -p 3000
+```
 
-* Ruby version
+Go to the application main page and try it out.
+```bash
+http://127.0.0.1:3000/products
+```
 
-* System dependencies
+## Screenshots
+![]()
+![]()
+![]()
+![]()
+![]()
 
-* Configuration
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
